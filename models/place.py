@@ -24,7 +24,22 @@ if storage_type == 'db':
 
 
 class Place(BaseModel, Base):
-    """ A place to stay """
+    """
+    Class Place that imports from BaseModel
+
+    Attributes:
+    city_id: string - City id
+    user_id: string - User id
+    name: name of Place
+    description: description of Place
+    number_rooms: number of rooms in Place
+    number_bathrooms: number of bathrooms in Place
+    max_guest: maximum number of guests in Place
+    price_by_night: price by night of Place
+    latitude: latitude of Place
+    longitude: longitude of Place
+    amenity_ids: Amenity id
+    """
     __tablename__ = 'places'
     if storage_type == 'db':
         city_id = Column(String(60), ForeignKey('cities.id'), nullable=False)
