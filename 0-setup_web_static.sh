@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sets up my web servers for the deployment of web_static
+#sets up my web servers for the deployment of web_static
 
 echo -e "\e[1;32m START\e[0m"
 
